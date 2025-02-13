@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<script>
+    function handleSubmit(event) {
+        event.preventDefault();
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const whatsapp = document.getElementById('whatsapp').value;
+        let mensagem = document.getElementById('mensagem').value;
+        window.location.href = `process.html?nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&whatsapp=${encodeURIComponent(whatsapp)}&mensagem=${encodeURIComponent(mensagem)}`;
+    }
+</script>
+
+<body>
+    <section class="contato">
+            <h1 class="title2">Fale Comigo.</h1>
+
+            <form onsubmit="handleSubmit(event)" class="formulario">
+                <input type="text" name="nome" id="nome" placeholder="Seu nome" required class="contact">
+                <input type="email" name="email" id="email" placeholder="Seu email" required class="contact">
+                <input type="number" name="WhatsApp" id="whatsapp" placeholder="Seu WhatsApp" required class="contact">
+                <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem" class="contact1"></textarea>
+                <div class="btn-enviar">
+                <input type="submit" value="Enviar" class="btn">
+                </div>
+            </form>
+        </section>
+            <ul class="sociais">
+                <a href="https://www.instagram.com/sofiaavasc?igsh=bXowbzdnd3c4czI5">
+                    <li style="--cor1: #d21b7dc6; --cor2: #000000;" class="redes">
+                        <span class="icon"><i class="bi bi-instagram"></i></span>
+                        <span class="text">@sofiaavasc</span>
+                    </li>
+                </a>
+
+                <a href="https://wa.me/+5581986721565">
+                    <li style="--cor1: #d21b7dc6; --cor2: #000000;" class="redes">
+                        <span class="icon"><i class="bi bi-whatsapp"></i></span>
+                        <span class="text">WhatsApp</span>
+                    </li>
+                </a>
+
+                <a href="https://x.com/sofiaavasc?s=21">
+                    <li style="--cor1: #d21b7dc6; --cor2: #000000;" class="redes">
+                        <span class="icon"><i class="bi bi-twitter-x"></i></span>
+                        <span class="text">@sofiaavasc</span>
+                    </li>
+                </a>
+            </ul>
+            <hr><div class="btn">
+                <a href="home.html">Voltar ao início</a>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <p>&copy; 2025 Sofia Vasconcelos. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </footer>
+    
+</body>
+</html>

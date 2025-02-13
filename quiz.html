@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="quiz">Quiz de Fórmula 1</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Qual a equipe com mais títulos de construtores? </p>
+                <input type="radio" id="q1a" name="q1" value="1">
+                <label for="q1a">Ferrari</label><br>
+                <input type="radio" id="q1b" name="q1" value="0">
+                <label for="q1b">Mercedes</label><br>
+                <input type="radio" id="q1c" name="q1" value="0">
+                <label for="q1c">Mclaren</label>
+                <br><input type="radio" id="q1d" name="q1" value="0">
+                <label for="q1d">RedBull</label>
+            </div>
+    
+            <div class="question">
+                <p>2. Quantos títulos o piloto brasileiro Ayrton Senna ganhou?</p>
+                <input type="radio" id="q2a" name="q2" value="0">
+                <label for="q2a">1</label><br>
+                <input type="radio" id="q2b" name="q2" value="0">
+                <label for="q2b">2</label><br>
+                <input type="radio" id="q2c" name="q2" value="1">
+                <label for="q2c">3</label>
+                <br><input type="radio" id="q2d" name="q2" value="0">
+                <label for="q2d">4</label>
+            </div>
+    
+            <div class="question">
+                <p>3. Quantos títulos Lewis Hamilton tem?</p>
+                <input type="radio" id="q3a" name="q3" value="0">
+                <label for="q3a">6</label><br>
+                <input type="radio" id="q3b" name="q3" value="1">
+                <label for="q3b">7</label><br>
+                <input type="radio" id="q3c" name="q3" value="0">
+                <label for="q3c">8</label>
+                <br><input type="radio" id="q3d" name="q3" value="0">
+                <label for="q3d">9</label>
+                
+            </div>
+    
+            <div class="question">
+                <p>4. Quantas equipes tem no grid atual?</p>
+                <input type="radio" id="q4a" name="q4" value="1">
+                <label for="q4a">10</label><br>
+                <input type="radio" id="q4b" name="q4" value="0">
+                <label for="q4b">9</label><br>
+                <input type="radio" id="q4c" name="q4" value="0">
+                <label for="q4c">12</label>
+                <br><input type="radio" id="q4d" name="q4" value="0">
+                <label for="q4d">15</label>
+            </div>
+    
+            <div class="question">
+                <p>5. Qual a equipe do atual campeão mundial Max Verstappen?</p>
+                <input type="radio" id="q5a" name="q5" value="0">
+                <label for="q5a">McLaren</label><br>
+                <input type="radio" id="q5b" name="q5" value="0">
+                <label for="q5b">Haas</label><br>
+                <input type="radio" id="q5c" name="q5" value="0">
+                <label for="q5c">Aston Martin</label>
+                <br><input type="radio" id="q5d" name="q5" value="1">
+                <label for="q5d">RedBull</label>
+            </div>
+    
+            <div class="result">
+                <br><button type="button" onclick="calcularResultado()" class="btn">Verificar Respostas</button>
+                <p id="resultado"></p>
+            </div>
+        </form>
+    </div>
+
+    <hr><div class="btn">
+        <a href="portifolio.html">Voltar ao Portifólio</a>
+      </div>
+
+
+    <script src="js/script4.js"></script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sofia Vasconcelos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

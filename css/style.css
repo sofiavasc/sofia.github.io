@@ -1,0 +1,380 @@
+body{
+    background-color: rgb(34,34,34);
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+.inicio{
+    display:inline-block;
+    margin: 60px;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+
+}
+
+img{
+    float: right;
+    margin-left: 150px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+span{
+    color:rgb(232, 27, 96)
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+a:hover{
+    color:rgb(235, 37, 103)
+}
+
+.title2{
+    flex-direction: column;
+    line-height: 50px;
+    font-weight: 200;
+    font-size: 60px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(231, 36, 101);
+}
+
+.banner{
+   display: flex;
+   justify-content: center;
+   
+}
+
+.btn{
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: rgb(230, 61, 117);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.title3{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.container{
+    height: auto;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.card-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(220, 87, 131);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.card-text{
+    width: 40%;
+    letter-spacing: 1px;
+    color: white;
+    text-align: left;
+    margin-left: 72px;
+}
+
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculadora{
+    background-color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#display{
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    border-radius: 6px;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.box-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+button{
+    border: none;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+
+.btn-zero{
+    grid-column: 1 / 3;
+}
+
+.btn-igual{
+    grid-row: 4 / 6;
+    height: 100%;
+    grid-column: 4;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+#imc {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#classificacao {
+    font-size: 1em;
+    color: #da3699;
+}
+
+.quiz-container {
+    background-color: rgb(82, 4, 48);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz{
+    text-align: center;
+    font-size: 45px;
+}
+
+.question {
+    margin: 15px 0;
+}
+.question label {
+    margin-right: 10px;
+}
+.result {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.interrogacao{
+    float: right;
+    margin-right: 400px;
+    
+}
+
+.adiv{
+    padding: 10px;
+            font-size: 16px;
+            width: 60px;
+}
+
+#dica {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#resultado2 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgb(230, 15, 83);
+}
+
+.contato{
+    text-align: center;
+    padding: 80px 4%;
+}
+
+.formulario{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.contact1{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    resize: none;
+    
+}
+
+.dados{
+    text-align: center;
+}
+
+.sociais{
+    display: flex;
+    position: relative;
+    gap: 40px;
+}
+
+.redes{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 8px 25px #0000003c;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    transition: .2s;
+}
+
+.redes{
+    width: 180px;
+}
+
+ul li span{
+    position: absolute;
+}
+
+ul li .icon{
+    color:rgb(236, 24, 98);
+    font-size: 2.2em;
+    transition: .2s;
+}
+
+ul li .text{
+    color:rgb(209, 21, 121);
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+ul li:hover .text{
+    transform: scale(1);
+}
+
+ul li:hover .icon{
+    transform: scale(0);
+}
+
+.footer {
+    background-color: rgb(34,34,34);  /* Cor de fundo */
+    color: #fff;             /* Cor do texto */
+    padding: 20px 0;         /* Espaçamento interno */
+    text-align: center;      /* Alinha o texto no centro */
+    position: relative;      /* Para garantir que o footer fique no final da página */
+    width: 100%;             /* Garantir que o footer ocupe toda a largura da página */
+}
+
+.footer .container {
+    width: 80%;             /* Controla a largura do conteúdo */
+    margin: 0 auto;         /* Centraliza o conteúdo */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Alinha os elementos em cada lado */
+    align-items: center;            /* Alinha os itens verticalmente no centro */
+    flex-wrap: wrap;                /* Permite que o conteúdo se reorganize em telas menores */
+}
+
+.footer-content p {
+    margin: 0;               /* Remove margens para alinhamento perfeito */
+}

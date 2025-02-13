@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados recebidos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const nome = urlParams.get('nome');
+        const email = urlParams.get('email');
+        const whatsapp = urlParams.get('whatsapp');
+        let mensagem = urlParams.get('mensagem');
+        document.getElementById('nome').textContent = nome;
+        document.getElementById('email').textContent = email;
+        document.getElementById('whatsapp').textContent = whatsapp;
+        document.getElementById('mensagem').textContent = mensagem;
+        
+    }
+</script>
+<body>
+    <h1 class="title3">Dados Recebidos</h1>
+    <div class="dados">
+    <p>Nome: <span id="nome"></span></p>
+    <p>E-mail: <span id="email"></span></p>
+    <p>WhatsApp: <span id="whatsapp"></span></p>
+    <p>Mensagem: <span id="mensagem"></span></p>
+    
+    <div class="btn">
+        <a href="home.html">Voltar ao início</a>
+    </div>
+    </div>
+
+</body>
+</html>
